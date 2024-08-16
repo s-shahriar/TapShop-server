@@ -50,7 +50,6 @@ async function run() {
         res.status(500).send({ message: "Error fetching products", error });
       }
     });
-    
   } finally {
   }
 }
