@@ -42,7 +42,6 @@ const client = new MongoClient(uri, {
 async function run() {
   try {
     const products = client.db("ecomDB").collection("products");
-    
     // Get all products
     app.get("/products", async (req, res) => {
       try {
